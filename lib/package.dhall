@@ -11,6 +11,9 @@ in  { Type =
           component : Optional Text
         , -- | A list of maintainers
           maintainers : List Text
+        , -- | is the package currently broken?
+          broken : Bool
         }
-    , default = { component = None Text, maintainers = [] : List Text }
+    , default =
+      { component = None Text, maintainers = [] : List Text, broken = False }
     }
