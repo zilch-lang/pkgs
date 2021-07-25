@@ -5,6 +5,17 @@
 - Please firstly read the [code of conduct](https://github.com/github/docs/blob/7f94058f57bc243a053f97b9965c05dbdfd01d21/CODE_OF_CONDUCT.md) to be sure to behave correctly
 - Some issue templates are provided for convenience. Please use them when reporting anything. Contributors/members will remind you to follow a template if not already done.
 
+## Commit message convention
+
+Commit messages must ideally follow the `<package>: <short message>` convention, where `<package>` is the name of the package the commit is for and `<short message>` shortly (less than 80 characters) describes the changes operated.
+
+Good messages include these:
+- Package request: `<package>: init at <version>`
+- Package upgrade: `<package>: <old-version> -> <new-version>`
+- Package breakage: `<package>: mark broken`
+
+For any other change, see any other commit related to it.
+
 ## Requesting a new package
 
 This repository is a set of *user-contributed* packages.
