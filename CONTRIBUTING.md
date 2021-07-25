@@ -42,3 +42,9 @@ Writing a new derivation for your package is actually easy:
 
 Sometimes, packages break for a particular reason (it was written for an old version of the language, it was poorly written and still got merged, or any other reason).
 When it happens, please ping at least one of the indicated maintainers (in the `maintainers` field) for them to be aware of the issue.
+In case the `maintainers` field is empty, please refer to the commit log.
+
+## Upgrading a package 
+
+You reported a package breakage and the issue was fixed upstream, but unfortunately you cannot yet use it in your project.
+In such case, you can request a package upgrade easily by updating the package's `version` and `source` fields, as well as the hash of the package in the package set.
