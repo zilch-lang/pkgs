@@ -9,6 +9,8 @@ in  { Type =
           src : Source
         , -- | If multiple components are declared in the source, specify one
           component : Optional Text
+        , -- | A list of maintainers
+          maintainers : List Text
         }
-    , default.component = None Text
+    , default = { component = None Text, maintainers = [] : List Text }
     }
