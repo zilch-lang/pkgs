@@ -36,7 +36,7 @@ Complaining about being pinged after adding a package will remove you from the m
 This repository uses the [Dhall](https://dhall-lang.org) configuration language to describe the package set.
 Writing a new derivation for your package is actually easy:
 1. Fork this repository in order to add your new package.
-2. Create a new file under the correct directory (e.g. `system/memory`) in the `packages` directory named `<package>.dhall`.
+2. Create a new file under the correct directory (e.g. `system/memory`) in the `packages` directory named `<package>/<version>.dhall` (like `system/memory/mmap/1.0.0.dhall`).
    Please make sure that the name of your new package is not already taken by another one!
 3. The package structure is described in the [lib/package.dhall](./lib/package.dhall) file.
    Here is a quick recap of the available fields and their types:
