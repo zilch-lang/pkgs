@@ -1,4 +1,4 @@
-let Package = (./lib/package.dhall).Type
+let Package = ./lib/package.dhall
 
 let Source = ./lib/source.dhall
 
